@@ -25,5 +25,5 @@ deluxe = { version = "0.5" }
 proc-macro2 = { version = "1" }
 quote = { version = "1" }
 syn = { version = "2" }
-binsard = { path = "binsard" }
-binsard_derive = { path = "binsard_derive" }
+binsard = { path = "binsard", version = "0.0.1" }
+binsard_derive = { path = "binsard_derive", version = "0.0.1" }

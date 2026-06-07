@@ -88,6 +88,7 @@ impl std::fmt::Display for DecodeError {
             Self::UnexpectedEof => write!(f, "unexpected end of input"),
             Self::InvalidUtf8 => write!(f, "invalid UTF-8 in string field"),
             Self::UnknownTag(tag) => write!(f, "unknown enum tag: {tag}"),
+            Self::LengthTooLarge => write!(f, "length prefix is too large"),
         }
     }
 }
