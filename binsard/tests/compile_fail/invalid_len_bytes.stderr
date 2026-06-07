@@ -1,0 +1,15 @@
+error: field `name`: #[binsard(len_bytes = 3)] must be 1, 2, or 4
+ --> tests/compile_fail/invalid_len_bytes.rs:3:10
+  |
+3 | #[derive(Encode, Decode)]
+  |          ^^^^^^
+  |
+  = note: this error originates in the derive macro `Encode` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error: field `name`: #[binsard(len_bytes = 3)] must be 1, 2, or 4
+ --> tests/compile_fail/invalid_len_bytes.rs:3:18
+  |
+3 | #[derive(Encode, Decode)]
+  |                  ^^^^^^
+  |
+  = note: this error originates in the derive macro `Decode` (in Nightly builds, run with -Z macro-backtrace for more info)

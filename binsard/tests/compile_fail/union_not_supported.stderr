@@ -1,0 +1,21 @@
+error[E0599]: no method named `encode_internal` found for union `MyUnion` in the current scope
+ --> tests/compile_fail/union_not_supported.rs:8:10
+  |
+3 | union MyUnion {
+  | ------------- method `encode_internal` not found for this union
+...
+8 | #[derive(Encode, Decode)]
+  |          ^^^^^^ method not found in `MyUnion`
+  |
+  = note: this error originates in the derive macro `Encode` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no function or associated item named `decode_internal` found for union `MyUnion` in the current scope
+ --> tests/compile_fail/union_not_supported.rs:8:18
+  |
+3 | union MyUnion {
+  | ------------- function or associated item `decode_internal` not found for this union
+...
+8 | #[derive(Encode, Decode)]
+  |                  ^^^^^^ function or associated item not found in `MyUnion`
+  |
+  = note: this error originates in the derive macro `Decode` (in Nightly builds, run with -Z macro-backtrace for more info)

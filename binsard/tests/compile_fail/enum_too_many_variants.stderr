@@ -1,0 +1,5 @@
+error: enum `TooMany` has 3 variants but #[binsard(bits = 1)] supports at most 2
+ --> tests/compile_fail/enum_too_many_variants.rs:5:6
+  |
+5 | enum TooMany {
+  |      ^^^^^^^

@@ -1,0 +1,22 @@
+[package]
+name = "binsard"
+version = "0.0.1"
+edition = "2021"
+license = "MIT"
+authors = ["derjones <jones@freshx.de>"]
+description = "Compact binary serialization format with bit-packing for Rust structs and enums"
+repository = "https://github.com/derjones/binsard"
+
+[lints]
+workspace = true
+
+[dependencies]
+binsard_derive = { workspace = true }
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+trybuild = "1"
+
+[[bench]]
+name = "roundtrip"
+harness = false
